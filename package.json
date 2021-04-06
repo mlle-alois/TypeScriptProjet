@@ -1,0 +1,20 @@
+{
+  "name": "typescriptprojet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/pokemon.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlle-alois/TypeScriptProjet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlle-alois/TypeScriptProjet/issues"
+  },
+  "homepage": "https://github.com/mlle-alois/TypeScriptProjet#readme"
+}
