@@ -57,6 +57,6 @@ do {
     let attacker = turn === 1 ? pokemon1 : pokemon2;
     let defender = turn === 1 ? pokemon2 : pokemon1;
     attack = attacker.attack(defender);
-    console.log(`${attacker.name} a infligé ${attack.damage} points de dégâts avec son attaque ${attack.title} à ${defender.name}, il lui reste ${defender.health} points de vie`);
+    console.log(`${attacker.name} a infligé ${attack.damage} points de dégâts avec son attaque ${attack.title} à {defender.name}, il lui reste ${defender.health} points de vie`);
     turn = turn === 1 ? 2 : 1;
 } while (pokemon1.health > 0 && pokemon2.health > 0);
