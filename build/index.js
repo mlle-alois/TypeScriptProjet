@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var pokemon_1 = require("./pokemon");
 var attack_1 = require("./attack");
+var fight_1 = require("./fight");
 var pokemon1 = new pokemon_1.Pokemon({
     name: "Pikachu",
     speed: 90,
@@ -55,7 +56,6 @@ var attack;
 do {
     var attacker = turn === 1 ? pokemon1 : pokemon2;
     var defender = turn === 1 ? pokemon2 : pokemon1;
-    attack = attacker.attack(defender);
-    console.log(attacker.name + " a inflig\u00E9 " + attack.damage + " points de d\u00E9g\u00E2ts avec son attaque " + attack.title + " \u00E0 " + defender.name + ", il lui reste " + defender.health + " points de vie");
+    fight_1.Fight.fight(attacker, defender);
     turn = turn === 1 ? 2 : 1;
 } while (pokemon1.health > 0 && pokemon2.health > 0);

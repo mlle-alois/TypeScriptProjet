@@ -1,5 +1,6 @@
 import {Pokemon} from "./pokemon";
 import {Attack} from "./attack";
+import {Fight} from "./fight";
 
 const pokemon1 = new Pokemon({
     name: "Pikachu",
@@ -56,8 +57,7 @@ let attack: Attack;
 do {
     let attacker = turn === 1 ? pokemon1 : pokemon2;
     let defender = turn === 1 ? pokemon2 : pokemon1;
-    attack = attacker.attack(defender);
-    console.log(`${attacker.name} a infligé ${attack.damage} points de dégâts avec son attaque ${attack.title} à ${defender.name}, il lui reste ${defender.health} points de vie`);
+    Fight.fight(attacker, defender);
     turn = turn === 1 ? 2 : 1;
 } while (pokemon1.health > 0 && pokemon2.health > 0);
 
