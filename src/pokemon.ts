@@ -35,9 +35,9 @@ export class Pokemon implements IPokemonProps {
         const attack = this.randomAttack();
 
         adversary.health -= attack.damage;
-        if (adversary.health < 0) {
-            adversary.health = 0;
-        }
+            if (adversary.health < 0) {
+                adversary.health = 0;
+            }
 
         return attack;
     }
